@@ -29,7 +29,7 @@ def socket_server():
             # if data is not received break
             break
         print("from connected user: " + str(data))
-        # data = input(' -> ')
+        data = input(' -> ')
         # Send data to the client
         conn.send(data.encode())
     # Close the connection
