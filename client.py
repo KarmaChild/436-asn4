@@ -4,7 +4,9 @@ import socket
 def socket_client():
     # Get hostname
     #
-    host = socket.gethostname()
+
+    # host = socket.gethostname()
+    host = input("hostname: ")
     # Port
     port = 8080
     # instantiate

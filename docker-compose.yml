@@ -20,6 +20,16 @@ services:
     - ./:/code
     stdin_open: true
     tty: true
+  python3:
+      image: python:latest
+      container_name: python3
+      ports:
+        - "8082:8080"
+      command: [ "bin/bash" ]
+      volumes:
+        - ./:/code
+      stdin_open: true
+      tty: true
 
 
 

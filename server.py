@@ -16,7 +16,8 @@ def socket_server():
 
     # Configure the number of clients
     chat_server.listen(2)
-    print("Server running🚀")
+    print("Server running on host: ", host, "🚀")
+
     # Server accepts new connection
     conn, address = chat_server.accept()
 
