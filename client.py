@@ -3,6 +3,7 @@ import socket
 
 def socket_client():
     # Get hostname
+    #
     host = socket.gethostname()
     # Port
     port = 8080

@@ -19,6 +19,7 @@ def socket_server():
     print("Server running🚀")
     # Server accepts new connection
     conn, address = chat_server.accept()
+
     print("Connection from: " + str(address))
     while True:
         # receive data stream
